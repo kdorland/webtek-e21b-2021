@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flot grafik</title>
+  <script src="script.js"></script>
+  <style>
+    svg {
+      border: 2px solid black
+    }
+  </style>
+</head>
+<body> 
+
+  <svg id="grafik" width="500" height="500"></svg>
+
+  <script>
+    let offsetX = -50;
+    let offsetY = 0;
+
+    drawBox(170 + offsetX,10 + offsetY,250,100, "black");
+    drawCircle(225 + offsetX, 225 + offsetY, 100, "blue");
+    drawBox(100 + offsetX, 100 + offsetY, 50, 250, "green");
+    drawCircle(200 + offsetX, 200 + offsetY, 20, "red");
+    drawCircle(250 + offsetX, 200 + offsetY, 20, "red");
+    drawLine (200 + offsetX, 250 + offsetY, 300 + offsetX, 250 + offsetY, "black");
+
+    offsetX = 230;
+    offsetY = 0;
+
+    drawBox(170 + offsetX,10 + offsetY,250,100, "black");
+    drawCircle(225 + offsetX, 225 + offsetY, 100, "blue");
+    drawBox(100 + offsetX, 100 + offsetY, 50, 250, "green");
+    drawCircle(200 + offsetX, 200 + offsetY, 20, "red");
+    drawCircle(250 + offsetX, 200 + offsetY, 20, "red");
+    drawLine (200 + offsetX, 250 + offsetY, 300 + offsetX, 250 + offsetY, "black");
+  </script>
+
+</body>
+</html>
