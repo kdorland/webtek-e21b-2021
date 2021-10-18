@@ -6,5 +6,5 @@ console.log(tal1, tal2); // Udskriver begge input-tal
 if (tal1 > tal2) {
   console.log("Input 1 er størst");
 } else {
-  console.log("Input 2 er størst");
+  console.log("Input 2 er størst")
 }
