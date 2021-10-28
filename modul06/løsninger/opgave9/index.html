@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Jeopardy data</title>
+  <script src="d3.js"></script>
+</head>
+
+<body>
+  <script>
+    // Loader jeopardy-data og gør det tilgængeligt
+    d3.json("JEOPARDY_QUESTIONS.json").then(function (data) {
+      let jeopardy = data;
+
+
+      let alleÅrstal = [];
+      let opsamling = [];
+      for (let question of data) {
+        let nyÅrstal = question.air_date.substring(0,4);
+        if (!alleÅrstal.includes(nyÅrstal)) {
+          alleÅrstal.push(nyÅrstal);
+          opsamling.push(0);
+        }
+      }
+      alleÅrstal.sort();
+      console.log(alleÅrstal);
+
+      for (let question of data) {
+        for (let i = 0; i < alleÅrstal.length; i++) {
+          if (question.air_date.substring(0,4) === alleÅrstal[i]) {
+            opsamling[i] = opsamling[i] + 1;
+          }
+        }
+      }
+
+      console.log(opsamling);
+    });
+  </script>
+
+</body>
+
+</html>
