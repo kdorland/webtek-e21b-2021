@@ -47,19 +47,33 @@
         .transition()
         .duration(1000)
         .attr("points", function (d) {
+          // Hvor meget punkterne kan flytte sig
           const variation = 20;
+          // Array kun med punkter - minus farven
           let points = d.slice(0, 3);
+
+          // De nye punkter (udfyldes med for loop)
           let newPoints = [];
           for (let i = 0; i < points.length; i++) {
+            // Lav nyt random punkt med random x og y
             let newPointX = Math.random() * variation;
             let newPointY = Math.random() * variation;
+
+            // Vælg fortegn tilfældigt (enten + eller -)
             newPointX *= Math.round(Math.random()) ? 1 : -1;
             newPointY *= Math.round(Math.random()) ? 1 : -1;
+
+            // Hent x og y for det gamle punkt
             oldPointX = parseInt(points[i].split(",")[0]);
             oldPointY = parseInt(points[i].split(",")[1]);
+
+            // Konstruer det nye punkt ved at lægge de gamle værdier til
             const newPoint = `${oldPointX + newPointX},${oldPointY + newPointY}`;
+
+            // Gem det nye punkt i nyt array
             newPoints.push(newPoint);
           }
+
           return newPoints;
         })
     }
