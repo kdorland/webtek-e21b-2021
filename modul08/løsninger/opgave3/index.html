@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Work Week Happiness</title>
+
+  <script type="text/javascript" src="d3.js"></script>
+  <style>
+    svg {
+      border: 2px solid black;
+      background-color: #f4fdfb;
+      padding: 1em;
+    }
+
+    circle {
+      fill: #75e6db85;
+      stroke-width: 2px;
+      stroke: #6fb6b2;
+    }
+
+    circle:hover {
+      stroke: #d36913;
+    }
+
+    text.label {
+      fill: #053626a8;
+    }
+
+    text.label:hover {
+      fill: rgb(248, 45, 96);
+      font-size: 1.5em;
+      stroke: black;
+      stroke-width: 0.1px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Work Week Happiness</h2>
+
+  <p>Prøv at holde musen over cirklerne.</p>
+
+  <button id="klik1">Alle lande</button>
+  <button id="klik2">Store lande</button>
+  <button id="klik3">Små lande</button>
+
+  <br /><br />
+
+  <script type="text/javascript">
+
+    d3.csv("work-week-happiness-population.csv").then(function (dataset) {
+
+      // Filtrering af data
+      const data = dataset.filter(function (row) {
+        return row.hapiscore_whr_2017 !== "" && row.working_hours_per_week_2017 !== ""
+      });
+      const storeLandeData = data.filter(function (row) {
+        return parseFloat(row.population_total_2017.replace("M", "")) > 30;
+      });
+      const småLandeData = data.filter(function (row) {
+        return parseFloat(row.population_total_2017.replace("M", "")) <= 30;
+      });
+
+      console.log("alt data:", data);
+      console.log("første række:", data[0]);
+      console.log("store lande:", storeLandeData);
+      console.log("små lande:", småLandeData);
+
+      // Width og height
+      const w = 1000;
+      const h = 800;
+      const padding = 40;
+      const padding_left = 70;
+
+      // Find alle max og min
+      let maxX = d3.max(data, function (d) {
+        return parseFloat(d.hapiscore_whr_2017);
+      });
+      let minX = d3.min(data, function (d) {
+        return parseFloat(d.hapiscore_whr_2017);
+      });
+      let maxY = d3.max(data, function (d) {
+        return parseFloat(d.working_hours_per_week_2017);
+      });
+      let minY = d3.min(data, function (d) {
+        return parseFloat(d.working_hours_per_week_2017);
+      });
+      let maxR = d3.max(data, function (d) {
+        return parseFloat(d.population_total_2017.replace("M", ""));
+      });
+
+      // Lav skaleringsfunktioner
+      const xScale = d3.scaleLinear()
+        .domain([minX, maxX])
+        .range([padding, w - padding_left]);
+
+      const yScale = d3.scaleLinear()
+        .domain([minY, maxY])
+        .range([h - padding, padding]);
+
+      const rScale = d3.scaleSqrt()
+        .domain([0, maxR])
+        .range([2, 80]);
+
+      // Lav SVG-elementet
+      const svg = d3.select("body")
+        .append("svg")
+        .attr("width", w)
+        .attr("height", h);
+
+      // Lave scatter plot (punktdiagram)
+      svg.selectAll("circle")
+        .data(data, function (d) {
+          // Denne funktion udpeger 'key' for hver række
+          // Så kan d3.js se hvis rækken skifter index
+          return d.country;
+        })
+        .enter()
+        .append("circle")
+        .attr("cx", function (d) {
+          return parseFloat(xScale(d.hapiscore_whr_2017));
+        })
+        .attr("cy", function (d) {
+          return parseFloat(yScale(d.working_hours_per_week_2017));
+        })
+        .attr("r", function (d) {
+          return parseFloat(rScale(d.population_total_2017.replace("M", "")));
+        });
+
+      // Udfyld labels
+      svg.selectAll("text.label") // "text.label" betyder <text> med class "label"
+        .data(data, function (d) {
+          // Denne funktion udpeger 'key' for hver række
+          // Så kan d3.js se hvis rækken skifter index
+          return d.country;
+        })
+        .enter()
+        .append("text")
+        .text(function (d) {
+          return d.country;
+        })
+        .attr("x", function (d) {
+          return parseFloat(xScale(d.hapiscore_whr_2017));
+        })
+        .attr("y", function (d) {
+          return parseFloat(yScale(d.working_hours_per_week_2017));
+        })
+        .attr("font-family", "sans-serif")
+        .attr("font-size", "11px")
+        .attr("class", "label"); // Husk at sætte class på
+
+      // Lave x-akse med tal
+      const xAxis = d3.axisBottom().scale(xScale);
+      svg.append("g") // "g" er en SVG Group
+        .attr("class", "axis")
+        .attr("transform", "translate(0," + (h - 20) + ")")
+        .call(xAxis)
+        .append("text")
+        .attr("text-anchor", "end")
+        .attr("fill", "black")
+        .attr("transform", `translate(${w}, 10)`)
+        .text("Hapiscore");
+      ;
+
+      // Lave y-akse med tal
+      const yAxis = d3.axisLeft().scale(yScale).ticks(5);
+      svg.append("g")
+        .attr("class", "axis")
+        .attr("transform", "translate(" + 25 + ",0)")
+        .call(yAxis)
+        .append("text")
+        .attr("text-anchor", "start")
+        .attr("fill", "black")
+        .attr("transform", "translate(-20, 25)")
+        .text("Avg working hours");
+
+      // Knapen vælges via dens id 'klik'
+      d3.selectAll("#klik1, #klik2, #klik3")
+        .on("click", function (e) {
+          // Find hvilken knap der blev trykket på
+          const id = e.target.id;
+
+          // Vælg det rigtige datasæt
+          let nyData = data;
+          if (id === "klik2") {
+            nyData = storeLandeData;
+          } else if (id === "klik3") {
+            nyData = småLandeData;
+          }
+
+          // Vælg cirkler og lav animation
+          const updateSelection = svg.selectAll("circle")
+            .data(nyData, function (d) {
+              // Denne funktion udpeger 'key' for hver række
+              // Så kan d3.js se hvis rækken skifter index
+              return d.country;
+            })
+
+          // Append `circle` og sæt attributter på de nye punkter
+          updateSelection.enter()
+            .append("circle")
+            .attr("cx", function (d) {
+              return  w / 2;
+            })
+            .attr("cy", function (d) {
+              return h / 2;
+            })
+            .attr("r", function (d) {
+              return 0;
+            })
+
+            // Her flettes det nye punkt sammen med de gamle punkter
+            .merge(updateSelection)
+            // Og alle punkter animeres nu
+            .transition()
+            .delay(200)
+            .duration(1500)
+            .attr("cx", function (d) {
+              return parseFloat(xScale(d.hapiscore_whr_2017));
+            })
+            .attr("cy", function (d) {
+              return parseFloat(yScale(d.working_hours_per_week_2017));
+            })
+            .attr("r", function (d) {
+              return parseFloat(rScale(d.population_total_2017.replace("M", "")));
+            })
+            ;
+
+          // 'exit' bruges til at animere punkter der fjernes
+          updateSelection.exit()
+            .transition()
+            .duration(1000)
+            .ease(d3.easeQuadOut)
+            .attr("r", 1) // Cirklen gøres lille
+            .remove(); // 'circle' slettes til sidst
+
+          // Fjern gamle labels først
+          svg.selectAll("text.label").remove(); 
+          // Lave nye labels
+          svg.selectAll("text.label") // "text.label" betyder <text> med class "label"
+            .data(nyData)
+            .enter()
+            .append("text")
+            .attr("x", function (d) {
+              return parseFloat(xScale(d.hapiscore_whr_2017));
+            })
+            .attr("y", function (d) {
+              return parseFloat(yScale(d.working_hours_per_week_2017));
+            })
+            .attr("font-family", "sans-serif")
+            .attr("font-size", "1px")
+            .attr("class", "label")
+            .attr("fill", "red")
+            .text(function (d) {
+              return d.country;
+            })
+            .transition()
+            .duration(2000)
+            .attr("font-size", "11px")
+            ;
+        });
+
+    });
+
+  </script>
+</body>
+
+</html>
