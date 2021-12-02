@@ -1,0 +1,872 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.20413687502922,
+          56.175453373440845
+        ]
+      },
+      "properties": {
+        "ogr_fid": 1,
+        "nr": 1,
+        "lokation": "A. H. Wingesvej",
+        "adresse": "A. H. Wingesvej 13, 8000 Aarhus C.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.201711469109854,
+          56.06381881074977
+        ]
+      },
+      "properties": {
+        "ogr_fid": 2,
+        "nr": 2,
+        "lokation": "Agernvej",
+        "adresse": "Agernvej 73, 8330 Beder",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.096465104896762,
+          56.10747626154442
+        ]
+      },
+      "properties": {
+        "ogr_fid": 3,
+        "nr": 3,
+        "lokation": "Baunevej",
+        "adresse": "Baunevej 15, 8361 Hasselager",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.247437565519357,
+          56.19133187488475
+        ]
+      },
+      "properties": {
+        "ogr_fid": 4,
+        "nr": 4,
+        "lokation": "Bellevue",
+        "adresse": "Fortevej 109, 8240 Risskov",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.120966279169116,
+          56.160457645876754
+        ]
+      },
+      "properties": {
+        "ogr_fid": 5,
+        "nr": 5,
+        "lokation": "Beringsminde",
+        "adresse": "Tranebærvej 44, 8220 Brabrand",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.192028609585996,
+          56.161545421852125
+        ]
+      },
+      "properties": {
+        "ogr_fid": 6,
+        "nr": 6,
+        "lokation": "Botanisk Have",
+        "adresse": "v. Peter Holms vej 17, 8000 Aarhus C.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.193779310796272,
+          56.15857515965876
+        ]
+      },
+      "properties": {
+        "ogr_fid": 7,
+        "nr": 61,
+        "lokation": "Botanisk Have",
+        "adresse": "v. Mønsgade 12, 8000 Aarhus C.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.170669885516245,
+          56.13048488819699
+        ]
+      },
+      "properties": {
+        "ogr_fid": 8,
+        "nr": 7,
+        "lokation": "Byvangen",
+        "adresse": "Grundvigsvej 55, 8260 Viby J.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.191021771300065,
+          56.032918882499196
+        ]
+      },
+      "properties": {
+        "ogr_fid": 9,
+        "nr": 8,
+        "lokation": "Bækvejsparken",
+        "adresse": "Bækvej 31, 8340 Malling",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.220411129966799,
+          56.21384971604653
+        ]
+      },
+      "properties": {
+        "ogr_fid": 10,
+        "nr": 9,
+        "lokation": "Egå Engsø",
+        "adresse": "Viengevej 7, 8250 Egå",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.180955366512448,
+          56.172633086926226
+        ]
+      },
+      "properties": {
+        "ogr_fid": 11,
+        "nr": 10,
+        "lokation": "Ekkodalen",
+        "adresse": "Ekkodalen 7, 8200 Aarhus N",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.179609359725212,
+          56.16857286886406
+        ]
+      },
+      "properties": {
+        "ogr_fid": 12,
+        "nr": 11,
+        "lokation": "Falkevej",
+        "adresse": "Falkevej 15, 8200 Aarhus N",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.229729070697285,
+          56.195536972867046
+        ]
+      },
+      "properties": {
+        "ogr_fid": 13,
+        "nr": 12,
+        "lokation": "Forteparken",
+        "adresse": "v. Agrivej 2, 8240 Risskov",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.188984475202984,
+          56.14718288880335
+        ]
+      },
+      "properties": {
+        "ogr_fid": 14,
+        "nr": 13,
+        "lokation": "Frederiksbjerg Bypark",
+        "adresse": "v. Læssøesgade 22, 8000 Aarhus C",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.14216923471523,
+          56.15042868113329
+        ]
+      },
+      "properties": {
+        "ogr_fid": 15,
+        "nr": 14,
+        "lokation": "Gjellerup Skov",
+        "adresse": "v. Snapagervej 4a, 8220 Brabrand",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.990331154322375,
+          56.14636608632865
+        ]
+      },
+      "properties": {
+        "ogr_fid": 16,
+        "nr": 15,
+        "lokation": "Harlev Bypark",
+        "adresse": "v. Araliavej 71, 8462 Harlev",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.202700735954497,
+          56.18295482941061
+        ]
+      },
+      "properties": {
+        "ogr_fid": 17,
+        "nr": 16,
+        "lokation": "Havrebakken",
+        "adresse": "v. Havrebakken 26, 8200 Aarhus N.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.180345252896617,
+          56.110163601420346
+        ]
+      },
+      "properties": {
+        "ogr_fid": 18,
+        "nr": 17,
+        "lokation": "Holme Bypark",
+        "adresse": "v. Bushøjvej 255, 8270 Højbjerg",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.178922575111892,
+          56.20032636431384
+        ]
+      },
+      "properties": {
+        "ogr_fid": 19,
+        "nr": 18,
+        "lokation": "Hullet",
+        "adresse": "Nedergårdsvej 12, 8200 Aarhus N.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.306069910365224,
+          56.26782917379315
+        ]
+      },
+      "properties": {
+        "ogr_fid": 20,
+        "nr": 19,
+        "lokation": "Hunderosevej",
+        "adresse": "Hunderosevej 5, 8541 Skødstrup",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.237445684300495,
+          56.243938965562265
+        ]
+      },
+      "properties": {
+        "ogr_fid": 21,
+        "nr": 20,
+        "lokation": "Indelukket",
+        "adresse": "v. Elstedvænge 31, 8520 Lystrup",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.129599602648558,
+          56.20792786476296
+        ]
+      },
+      "properties": {
+        "ogr_fid": 22,
+        "nr": 21,
+        "lokation": "Kasted",
+        "adresse": "Kasted Byvej 16B, 8200 Aarhus N",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.171120724633118,
+          56.227366228204474
+        ]
+      },
+      "properties": {
+        "ogr_fid": 23,
+        "nr": 22,
+        "lokation": "Kimbrerdalen",
+        "adresse": "overfor Elevvej 24, 8200 Aarhus N",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.17881907862327,
+          56.14031572304101
+        ]
+      },
+      "properties": {
+        "ogr_fid": 24,
+        "nr": 23,
+        "lokation": "Kirkedammen",
+        "adresse": "v. Kirkedammen 10, 8000 Aarhus C",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.157108817247403,
+          56.16156005465221
+        ]
+      },
+      "properties": {
+        "ogr_fid": 25,
+        "nr": 24,
+        "lokation": "Klokkerparken",
+        "adresse": "v. Klokkerfaldet 10, 8210 Århus V.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.074776199164496,
+          56.111751549087444
+        ]
+      },
+      "properties": {
+        "ogr_fid": 26,
+        "nr": 25,
+        "lokation": "Kolt Park",
+        "adresse": "v. Fuglekærvej 116, 8361 Hasselager",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.088598220437744,
+          56.03875716877583
+        ]
+      },
+      "properties": {
+        "ogr_fid": 27,
+        "nr": 26,
+        "lokation": "Kærgårdsparken",
+        "adresse": "v. Kærgårdsvej 43, 8355 Solbjerg",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.193399938798262,
+          56.17803803946388
+        ]
+      },
+      "properties": {
+        "ogr_fid": 28,
+        "nr": 27,
+        "lokation": "Lillehammervej",
+        "adresse": "Lillehammervej 18, 8200 Aarhus N.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.165270869707859,
+          56.22201106504175
+        ]
+      },
+      "properties": {
+        "ogr_fid": 29,
+        "nr": 28,
+        "lokation": "Lisbjerg",
+        "adresse": "Elevvej 4, 8200 Aarhus N.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.159964134246358,
+          56.181471987241885
+        ]
+      },
+      "properties": {
+        "ogr_fid": 30,
+        "nr": 29,
+        "lokation": "Marienlyst Park",
+        "adresse": "i nærheden af Rydevænget 4, 8210 Aarhus V.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.203984310518242,
+          56.12955553345118
+        ]
+      },
+      "properties": {
+        "ogr_fid": 31,
+        "nr": 30,
+        "lokation": "Mindeparken",
+        "adresse": "v. Carl Nielsens vej 15, 8000 Aarhus C",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.207439060705246,
+          56.13115886353106
+        ]
+      },
+      "properties": {
+        "ogr_fid": 32,
+        "nr": 31,
+        "lokation": "Rømerhaven",
+        "adresse": "Carl Nielsens vej mellem nr. 11 og 13, 8000 Aarhus C",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.200529870407639,
+          56.20046696830509
+        ]
+      },
+      "properties": {
+        "ogr_fid": 33,
+        "nr": 32,
+        "lokation": "Mollerup Skov",
+        "adresse": "v. Skejbyvej 36, 8200 Aarhus N.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.168303748993846,
+          56.16408477829999
+        ]
+      },
+      "properties": {
+        "ogr_fid": 34,
+        "nr": 33,
+        "lokation": "Præstevangen",
+        "adresse": "Præstevangsvej 26A, 8210 Aarhus V.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.134365476010935,
+          56.16916954264458
+        ]
+      },
+      "properties": {
+        "ogr_fid": 35,
+        "nr": 34,
+        "lokation": "Skjoldhøjkilen",
+        "adresse": "v. Skjoldhøjvej 19, 8210 Aarhus V.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.231018768522645,
+          56.19183357929128
+        ]
+      },
+      "properties": {
+        "ogr_fid": 36,
+        "nr": 35,
+        "lokation": "Skoleparken",
+        "adresse": "v. Kastaniebakken 4, 8240 Risskov",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.11493382280538,
+          56.18773762509411
+        ]
+      },
+      "properties": {
+        "ogr_fid": 37,
+        "nr": 36,
+        "lokation": "Skaarups Allé",
+        "adresse": "v. Skaarups Allé 12, 8381 Tilst",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.121942549874332,
+          56.129947819469606
+        ]
+      },
+      "properties": {
+        "ogr_fid": 38,
+        "nr": 37,
+        "lokation": "Stautrup",
+        "adresse": "v. Højvangsvej 51, 8260 Viby J",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.21468125496036,
+          56.17348683352562
+        ]
+      },
+      "properties": {
+        "ogr_fid": 39,
+        "nr": 38,
+        "lokation": "Steen Billes Torv",
+        "adresse": "Steen Billes Torv 20, 8200 Aarhus N.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.107337696771898,
+          56.15145090121184
+        ]
+      },
+      "properties": {
+        "ogr_fid": 40,
+        "nr": 39,
+        "lokation": "Søparken",
+        "adresse": "v. Søparkvej 7, 8220 Brabrand",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.203014318170618,
+          56.144484963566185
+        ]
+      },
+      "properties": {
+        "ogr_fid": 41,
+        "nr": 40,
+        "lokation": "Tiegtens Plads",
+        "adresse": "Tiegtens Plads, 8000 Aarhus C",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.097628474586367,
+          56.18972804755328
+        ]
+      },
+      "properties": {
+        "ogr_fid": 42,
+        "nr": 41,
+        "lokation": "Tilst Bypark",
+        "adresse": "v. Lyngsvinget 11, 8381 Mundelstrup",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.135689474838363,
+          56.0938470440571
+        ]
+      },
+      "properties": {
+        "ogr_fid": 43,
+        "nr": 42,
+        "lokation": "Tranbjerg Hovedgade",
+        "adresse": "Tranbjerg Hovedgade 55, 8310 Tranbjerg J",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.20663584698425,
+          56.16516656572046
+        ]
+      },
+      "properties": {
+        "ogr_fid": 44,
+        "nr": 43,
+        "lokation": "Vennelystparken",
+        "adresse": "Vennelyst Boulevard 9, 8000 Aarhus C.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.201330961554053,
+          56.1857807309507
+        ]
+      },
+      "properties": {
+        "ogr_fid": 45,
+        "nr": 44,
+        "lokation": "Vorrevangsparken",
+        "adresse": "Vorregårds Allé 112, 8200 Aarhus N.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.147820017872512,
+          56.12580870556144
+        ]
+      },
+      "properties": {
+        "ogr_fid": 46,
+        "nr": 45,
+        "lokation": "Vårkær Park",
+        "adresse": "Vårkærvej 18, 8260 Viby J.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.13627848238484,
+          56.2329187904511
+        ]
+      },
+      "properties": {
+        "ogr_fid": 47,
+        "nr": 46,
+        "lokation": "Ølsted Grønning",
+        "adresse": "Hvidbjergvej 16, 8380 Trige",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.236732276731749,
+          56.10100145478521
+        ]
+      },
+      "properties": {
+        "ogr_fid": 48,
+        "nr": 47,
+        "lokation": "Ørnereden",
+        "adresse": "Ørneredevej 55, 8270 Højbjerg",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.165175018508924,
+          56.15309380456204
+        ]
+      },
+      "properties": {
+        "ogr_fid": 49,
+        "nr": 48,
+        "lokation": "Åby Park",
+        "adresse": "Thorsvej 28, 8230 Åbyhøj",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.28185158246067,
+          56.20232147353409
+        ]
+      },
+      "properties": {
+        "ogr_fid": 50,
+        "nr": 49,
+        "lokation": "Åkrogen",
+        "adresse": "Åkrog Strandvej 46, 8240 Risskov",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.213999828021997,
+          56.153385621777375
+        ]
+      },
+      "properties": {
+        "ogr_fid": 51,
+        "nr": 50,
+        "lokation": "DOKK1",
+        "adresse": "Hack Kampmanns Plads 2, 8000 Aarhus C.",
+        "_timestamp": "2020-02-14 00:00:00.0"
+      }
+    }
+  ]
+}
